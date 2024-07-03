@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(23, 23, 59);
+}
+.container{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin:  auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.bat{
+    background-color: #dca956;
+    width: 160px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    top: 160px;
+    left: 120px;
+    animation: play 2s infinite;
+    transform-origin: right;
+}
+@keyframes play {
+    50%{
+        transform: rotate(-30deg);
+    }
+}
+.hadle{
+    width: 0;
+    height: 20px;
+    border-left: 110px solid #dca956;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: relative;
+    top: 100px;
+    left: 70px;
+    transform: rotatey(180deg) rotate(-55deg);
+}
+.upper{
+    width: 0;
+    height: 13px;
+    border-left:110px solid #f2ca89;
+    border-top:13px solid transparent;
+    border-bottom:15px solid transparent;
+    position: relative;
+    bottom: 15px;
+    right: 108px;
+}
+.front{
+    background-color: #f2354c;
+    height: 116px;
+    width: 160px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 40px;
+}
+.ball{
+    background-color: white;
+    height:25px;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 115px;
+    left: 180px;
+    animation: bounce 2s infinite;
+}
+ @keyframes bounce{
+    50%{
+        transform: translateY(225px);
+    }
+ }
